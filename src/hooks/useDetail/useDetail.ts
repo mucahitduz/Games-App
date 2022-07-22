@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { API_HOST, API_KEY } from "../../components/GameList/constants";
+import { api_host, api_key } from "../../components/GameList/constants";
 import { GameDetailType } from "../../types/types";
 
 interface Response {
@@ -13,10 +13,10 @@ const useDetail = (gameId: string): Response => {
   useEffect(() => {
     axios
       .get(`/game`, {
-        baseURL: `https://${API_HOST}/api`,
+        baseURL: `https://${api_host}/api`,
         headers: {
-          "x-rapidapi-key": API_KEY,
-          "x-rapidapi-host": API_HOST,
+          "x-rapidapi-key": api_key,
+          "x-rapidapi-host": api_host,
         },
         params: {
           id: gameId,

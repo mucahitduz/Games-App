@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import {
-  API_BASE_URL,
-  API_HOST,
-  API_KEY,
+  api_base_url,
+  api_host,
+  api_key,
 } from "../../components/GameList/constants";
 import { Filter, Game, Response } from "../../types/types";
 
@@ -14,10 +14,10 @@ const useFetch = (params: Filter): Response => {
   useEffect(() => {
     axios
       .get("/games", {
-        baseURL: `${API_BASE_URL}`,
+        baseURL: `${api_base_url}`,
         headers: {
-          "x-rapidapi-key": API_KEY,
-          "x-rapidapi-host": API_HOST,
+          "x-rapidapi-key": api_key,
+          "x-rapidapi-host": api_host,
         },
         params: {
           platform,
