@@ -1,0 +1,174 @@
+.details {
+  margin-left: 7%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail {
+  flex: 30%;
+}
+
+.desc {
+  flex: 70%;
+}
+
+.detail-title {
+  margin: 1rem 0;
+  margin-left: 10px;
+  color: #aaa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-img {
+  display: flex;
+  margin-left: 10px;
+  max-width: 100%;
+}
+
+.detail-desc {
+  margin: 1rem 0;
+  margin-left: 10px;
+  color: #aaa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+.detail-screenshot {
+  margin: 1rem 0;
+  margin-left: 10px;
+  width: 45%;
+}
+
+.detail-genre {
+  color: #aaa;
+  width: max-content;
+  margin-left: 15%;
+}
+
+.detail-platform {
+  color: #aaa;
+  margin-left: 15%;
+}
+
+.detail-publisher {
+  color: #aaa;
+  margin-left: 15%;
+}
+
+.detail-developer {
+  color: #aaa;
+  margin-left: 15%;
+}
+
+.detail-date {
+  color: #aaa;
+  margin-left: 15%;
+}
+
+.detail-desc {
+  color: #aaa;
+  width: 90%;
+}
+
+@media (max-width: 767px) {
+  .detail {
+    flex: 100%;
+  }
+
+  .details {
+    margin-left: 0;
+  }
+
+  .detail-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .detail-screenshot {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .detail {
+    flex: 100%;
+  }
+  .details {
+    margin-left: 0;
+  }
+  .detail-img {
+    width: 100%;
+  }
+  .detail-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .detail-screenshot {
+    width: 100%;
+  }
+  .detail-genre {
+    color: #aaa;
+    width: max-content;
+    margin-left: 15px;
+  }
+
+  .detail-platform {
+    color: #aaa;
+    margin-left: 15px;
+  }
+
+  .detail-publisher {
+    color: #aaa;
+    margin-left: 15px;
+  }
+
+  .detail-developer {
+    color: #aaa;
+    margin-left: 15px;
+  }
+
+  .detail-date {
+    color: #aaa;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .detail-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .detail-img {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .detail-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .detail-desc {
+    display: flex;
+    align-items: center;
+  }
+}
