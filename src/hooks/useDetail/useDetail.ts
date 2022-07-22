@@ -1,10 +1,6 @@
 import { useState, useEffect, FC } from "react";
 import axios from "axios";
-import {
-  API_HOST,
-  API_KEY,
-  API_BASE_URL,
-} from "../../components/GameList/constants";
+import { API_HOST, API_KEY } from "../../components/GameList/constants";
 import { GameDetailType } from "../../types/types";
 
 interface Response {
