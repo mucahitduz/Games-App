@@ -1,4 +1,4 @@
-import { useState, useEffect, FC } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { API_HOST, API_KEY } from "../../components/GameList/constants";
 import { GameDetailType } from "../../types/types";
