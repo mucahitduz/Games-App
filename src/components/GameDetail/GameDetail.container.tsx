@@ -1,8 +1,4 @@
-import { useEffect, useState } from 'react'
-import axios from 'axios'
-import { Game } from '../../types/types'
 import GameDetailRender from "./GameDetail"
-import { API_HOST, API_KEY } from '../GameList/constants'
 import useDetail from '../../hooks/useDetail/useDetail'
 
 interface Props {
