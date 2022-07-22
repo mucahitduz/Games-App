@@ -16,8 +16,8 @@ const useFetch = (params: Filter): Response => {
       .get("/games", {
         baseURL: `${api_base_url}`,
         headers: {
-          "x-rapidapi-key": api_key,
-          "x-rapidapi-host": api_host,
+          "x-rapidapi-key": api_key as string,
+          "x-rapidapi-host": api_host as string,
         },
         params: {
           platform,

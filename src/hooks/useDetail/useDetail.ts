@@ -15,8 +15,8 @@ const useDetail = (gameId: string): Response => {
       .get(`/game`, {
         baseURL: `https://${api_host}/api`,
         headers: {
-          "x-rapidapi-key": api_key,
-          "x-rapidapi-host": api_host,
+          "x-rapidapi-key": api_key as string,
+          "x-rapidapi-host": api_host as string,
         },
         params: {
           id: gameId,
