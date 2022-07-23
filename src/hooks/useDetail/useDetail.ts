@@ -27,7 +27,7 @@ const useDetail = (gameId: string): Response => {
         },
       })
       .then((res) => setDetails(res.data));
-  }, [gameId]);
+  }, []);
 
   return {
     details,
